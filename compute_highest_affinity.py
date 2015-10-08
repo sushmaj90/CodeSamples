@@ -1,3 +1,6 @@
+#Main program test_compute_main.py
+#This function finds the pait of webpages that has been viewed maximun number of times
+
 def highest_affinity(site_list, user_list, time_list):
     def combinations(iterable, r):
         pool = tuple(iterable)
