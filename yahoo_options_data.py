@@ -1,4 +1,5 @@
-# CodeSamples
+# Main Program - test_aapl.py
+#Code to scrape the data from yahoo options web page using python and beautifulsoup
 from bs4 import BeautifulSoup
 import json
 from operator import itemgetter
