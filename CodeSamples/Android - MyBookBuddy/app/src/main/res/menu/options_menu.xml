@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Logout"
+        />
+    <item
+        android:id="@+id/iconCreate"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_add_white_24dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Add book"
+        />
+    <item
+        android:id="@+id/iconProfile"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_perm_identity_white_24dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Profile"
+        />
+</menu>

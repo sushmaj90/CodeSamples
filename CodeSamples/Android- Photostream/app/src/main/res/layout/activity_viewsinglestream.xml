@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:text="Connexus!"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:paddingBottom = "40sp"
+        />
+
+    <TextView
+        android:id="@+id/streamname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/UploadImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/UploadImage"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:onClick="sendUploadImage"/>
+
+    <Button
+        android:id="@+id/ViewStreams"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewStreams"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"
+        android:onClick="sendViewStreams"/>
+
+</LinearLayout>

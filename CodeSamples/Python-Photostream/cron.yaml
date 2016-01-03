@@ -1,0 +1,16 @@
+cron:
+- description: five mins task
+  url: /fivemins
+  schedule: every 5 mins
+
+- description: hourly task
+  url: /hourly
+  schedule: every 1 hours
+
+- description: daily task
+  url: /daily
+  schedule: every 24 hours
+
+- description: Update search index
+  url: /search_update
+  schedule: every 1 hours

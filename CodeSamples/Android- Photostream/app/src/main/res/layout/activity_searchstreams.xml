@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewAllStreams">
+
+    <EditText android:id="@+id/ViewStreamsSearchText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ViewStreamsSearchText"/>
+
+    <Button
+        android:id="@+id/ViewStreamsSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewStreamsSearchButton"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"
+        android:onClick="sendViewStreamsSearchInput"/>
+
+    <TextView
+        android:id="@+id/dynamictext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
+</LinearLayout>

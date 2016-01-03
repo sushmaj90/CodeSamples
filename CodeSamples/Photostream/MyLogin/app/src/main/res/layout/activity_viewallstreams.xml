@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ViewAllActivity">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ViewStreamsConnexus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="@string/title_text"
+            android:textSize="45sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal|bold"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@android:color/holo_red_dark"/>
+
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview"
+            android:layout_below="@id/ViewStreamsConnexus"
+            android:layout_width="fill_parent"
+            android:layout_height="290dp"
+            android:columnWidth="90dp"
+            android:numColumns="4"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+
+
+        <EditText android:id="@+id/ViewStreamsSearchText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/ViewStreamsSearchText"/>
+
+        <Button
+            android:id="@+id/ViewStreamsNearby"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridview"
+            android:layout_alignTop="@id/ViewStreamsSearchText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/ViewStreamsNearby"
+            android:textAllCaps="false"
+            android:onClick="findNearByStreams"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/ViewStreamsSearchButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ViewStreamsSearchText"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ViewStreamsSearchButton"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            android:onClick="sendViewStreamsSearchInput"/>
+
+
+        <Button
+            android:id="@+id/ViewStreamstoMySubscribedStreams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ViewStreamsSearchButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/ViewStreamsToMySubscribedStreams"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            android:onClick="toMySubscribedStreams"/>
+
+    </RelativeLayout>
+</ScrollView>

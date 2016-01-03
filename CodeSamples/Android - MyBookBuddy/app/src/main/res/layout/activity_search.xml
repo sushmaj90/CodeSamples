@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/crossword"
+    tools:context="com.example.sushma.apt_finalandroid.SearchActivity"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+    <TextView
+        android:id="@+id/dynamictext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:textColor="#660066"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:id="@+id/linBtns"
+        android:layout_below="@id/dynamictext"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_marginTop="5dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/dynamictext"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:text="Books nearby"
+            android:background="@drawable/shape"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_marginTop="5dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/btnMaps"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/grid"
+            android:textAllCaps="false"
+            android:text="@string/filterResults"
+            android:background="@drawable/shape"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnCategories"
+            android:layout_marginTop="5dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/btnFilter"
+            android:layout_below="@id/grid"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:text="Filter categories"
+            android:background="@drawable/shape"
+            >
+        </Button>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linBtns"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linGrid"
+        android:orientation="vertical"
+        >
+
+    <GridView
+        android:numColumns="auto_fit"
+        android:columnWidth="120dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3dp"
+        android:id="@+id/grid"
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

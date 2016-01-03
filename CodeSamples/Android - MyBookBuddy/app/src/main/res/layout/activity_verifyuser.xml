@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/crossword"
+    tools:context="com.example.sushma.apt_finalandroid.MainActivity"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyBookBuddy"
+            android:textColor="#78AB46"
+            android:layout_marginTop="200dp"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dip"
+            android:enabled="false" />
+        <TextView
+            android:id="@+id/sign_in_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/status_signed_out" />
+        <!--<TextView-->
+        <!--android:id="@+id/text1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Verify your enrollment to the university"-->
+        <!--android:textColor="#660066"-->
+        <!--android:textSize="17sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:typeface="serif"-->
+        <!--/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/profileUniEmail"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:hint="Enter your university email"/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btnVerifyUser"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Verify"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="@drawable/shape">-->
+        <!--</Button>-->
+        <!--<TextView-->
+        <!--android:id="@+id/text2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="An email has been sent! Please complete verification and click on Profile Creation"-->
+        <!--android:textColor="#660066"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:textSize="9sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:typeface="serif"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btnCreateProfile"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Create Profile"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:visibility="invisible"-->
+        <!--android:background="@drawable/shape">-->
+        <!--</Button>-->
+        <!--<TextView-->
+        <!--android:id="@+id/errVer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="You have not been verified yet"-->
+        <!--android:textColor="@android:color/holo_red_light"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:textSize="9sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:typeface="serif"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+
+    </LinearLayout>
+</ScrollView>

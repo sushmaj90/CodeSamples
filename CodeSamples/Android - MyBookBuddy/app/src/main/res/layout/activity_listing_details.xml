@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/crossword"
+    tools:context="com.example.sushma.apt_finalandroid.ListingDetails"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgBook"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/imgBook"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#660066">
+        </TextView>
+
+        <TextView
+            android:id="@+id/bookStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#660066">
+        </TextView>
+        <TextView
+            android:id="@+id/invOwnerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#660066"
+            android:visibility="invisible">
+        </TextView>
+        <EditText
+            android:id="@+id/numDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/ListingDetailsDays"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/userRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/TextUserRating"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            >
+        </EditText>
+        <TextView
+            android:id="@+id/calcCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnBuyRent"
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            >
+        </Button>
+        <TextView
+            android:id="@+id/errField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp">
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/imgBook"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Book Details:"
+            android:textColor="#660066">
+        </TextView>
+        <TextView
+            android:id="@+id/list_text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/list_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" >
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

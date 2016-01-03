@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+    </ImageView>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:layout_below="@id/grid_image"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textSize="9sp"
+        android:textColor="#660066">
+    </TextView>
+    <TextView
+        android:id="@+id/grid_author"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="#660066">
+    </TextView>
+    <TextView
+        android:id="@+id/grid_status"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="#660066">
+    </TextView>
+    <TextView
+        android:id="@+id/grid_cost"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="#660066">
+    </TextView>
+
+
+</LinearLayout>
+</RelativeLayout>

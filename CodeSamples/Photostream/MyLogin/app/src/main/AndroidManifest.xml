@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sushma.mylogin" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayImages"
+            android:label="@string/title_activity_display_images" >
+        </activity>
+        <activity
+            android:name=".ImageUpload"
+            android:label="@string/title_activity_image_upload" >
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="MiniProject" >
+        </activity>
+        <activity
+            android:name=".ViewAllStreams"
+            android:label="MiniProject" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="MiniProject" >
+        </activity>
+        <activity
+            android:name=".SubscribeActivity"
+            android:label="MiniProject" >
+        </activity>
+        <activity
+            android:name=".NearbyActivity"
+            android:label="MiniProject" >
+        </activity>
+        <activity
+            android:name=".CameraApp"
+            android:label="MiniProject">
+            <!--android:screenOrientation="landscape"-->
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    </application>
+
+
+</manifest>

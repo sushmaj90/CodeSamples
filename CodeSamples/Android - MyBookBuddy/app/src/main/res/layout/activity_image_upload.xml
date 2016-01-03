@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/crossword"
+    tools:context="com.example.sushma.apt_finalandroid.ImageUpload"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/bookStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:textStyle="italic"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="55dp"
+            android:text="Add your Book to MyBookBuddy"
+            android:textColor="#660066">
+        </TextView>
+        <EditText android:id="@+id/bookName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/bookName"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/bookName"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:id="@+id/thumbnail"
+                android:layout_marginTop="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/defaultbook"
+                />
+            <!--<Button-->
+                <!--android:id="@+id/camera_button"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/shape"-->
+                <!--android:text="Upload Book Image"-->
+                <!--android:textAllCaps="false"-->
+                <!--/>-->
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="200dp"
+            android:id="@+id/layoutEdtTxt"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <EditText android:id="@+id/authorName"
+                android:layout_width="200dp"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="@string/authorName"/>
+            <EditText android:id="@+id/categoryName"
+                android:layout_width="200dp"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="@string/categoryName"/>
+            <EditText android:id="@+id/pickupLocation"
+                android:layout_width="200dp"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="@string/pickupLocation"/>
+            <RadioGroup
+                android:id="@+id/radioRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/radioRent">
+
+                <RadioButton
+                    android:id="@+id/radioRent"
+                    android:layout_width="200dp"
+                    android:textStyle="italic"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_rent" />
+
+                <RadioButton
+                    android:id="@+id/radioSell"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_sell" />
+
+            </RadioGroup>
+            <EditText android:id="@+id/costprice"
+                android:layout_width="200dp"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="@string/costprice"/>
+            <TextView
+                android:id="@+id/errField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/layoutEdtTxt"
+            >
+        <Button
+            android:id="@+id/createListingButton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:text="@string/createListingButton"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/shape"
+            >
+        </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

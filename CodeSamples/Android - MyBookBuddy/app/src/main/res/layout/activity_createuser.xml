@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/crossword"
+    tools:context="com.example.sushma.apt_finalandroid.CreateUser"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/bookStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="55dp"
+        android:text="Create MyBookBuddy Profile"
+        android:textColor="#660066">
+    </TextView>
+
+    <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Profile photo, click to modify"
+    android:textColor="#660066"
+    android:textSize="8sp"
+    android:layout_gravity="center"
+    android:layout_marginTop="2dp"
+    android:typeface="serif">
+    </TextView>
+
+     <EditText
+            android:id="@+id/profileUserName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:hint="@string/user_name"/>
+
+
+        <EditText
+            android:id="@+id/profileUniversity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:hint="@string/user_university"/>
+
+    <EditText
+        android:id="@+id/profileUniEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:hint="University email"/>
+
+    <TextView
+        android:id="@+id/errVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="8dp"
+        android:textSize="9sp"
+        android:layout_gravity="center"
+        android:typeface="serif"
+        android:visibility="invisible"
+        />
+
+
+    <Button
+        android:id="@+id/btnCreateProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonCreateProfile"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape">
+    </Button>
+
+</LinearLayout>
+</ScrollView>
